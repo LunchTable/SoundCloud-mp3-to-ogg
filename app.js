@@ -6,14 +6,14 @@ var express = require('express'),
     Converter = require('./lib/converter'),
     Track = require('./lib/track'),
     sendMainPage = function (req, res) {
-      res.sendfile(__dirname + '/views/main.html')
+		res.sendfile(__dirname + '/views/main.html')
     };
 
 app.configure(function () {
 	app.use(express.methodOverride());
 	app.use(express.bodyParser());
 	app.use(express.logger({
-	'format': ':date :method :url :status - :response-time ms'
+		'format': ':date :method :url :status - :response-time ms'
 	}))
 	app.use(app.router);
 
