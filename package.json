@@ -1,0 +1,13 @@
+{ "name" : "LunchTablaStream",
+  "version" : "0.0.1",
+  "description" : "Simple mp3 -> ogg converter",
+  "author" : "Oliver Nightingale (canvas.fm) / Matt Baer",
+  "main" : "./app.js",
+  "dependencies" : {
+    "express" : "2.5.9"
+  },
+  "engine": {
+    "node": "0.6.x"
+  }
+}
+
