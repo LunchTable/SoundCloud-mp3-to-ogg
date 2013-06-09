@@ -12,6 +12,14 @@ Based off of [Canvas.fm](https://github.com/olivernn/canvas.fm), pruned and with
 * Edit [config.json](config.json) with your SoundCloud API key
 * Run the app `node app.js`
 
+## Upstart
+
+To use [upstart](http://upstart.ubuntu.com/) to run the streamer:
+
+1. Modify `stream.conf` with correct paths to this repo on your machine.
+2. Copy `stream.conf` to `/etc/init/stream.conf`
+3. Start streamer `sudo start stream`
+
 ## Known Limitations
 
 At its current state, no duration information gets passed along to the browser, making it impossible to skip ahead in a track. Because of this, we recommend still putting the SoundCloud mp3 `<source>` first, so that mp3-supporting browser users don't experience this shortcoming.
