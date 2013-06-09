@@ -47,4 +47,4 @@ app.get('/stream/:track_id', function (request, response) {
 })
 
 app.listen(3000)
-console.log(new Date, 'mp3 Converter starting')
+console.log(new Date, 'LunchTab.la Converter starting')

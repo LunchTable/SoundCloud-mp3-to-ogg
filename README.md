@@ -1,14 +1,14 @@
-Node MP3 -> OGG streamer
-========================
+SoundCloud MP3 -> OGG streamer
+==============================
 
-Enables SoundCloud streams to be played with HTML5 `<audio>` in OGG-supporting browsers like Firefox. Simply converts mp3s to oggs on the fly.
+Enables SoundCloud streams to be played with HTML5 `<audio>` element in OGG-supporting browsers like Firefox. Converts mp3s to oggs on the fly.
 
 Based off of [Canvas.fm](https://github.com/olivernn/canvas.fm), pruned and with a little more error-handling thrown in.
 
 ## Installation
 
 * Install dependencies `npm install .`
-* Ensure ffmpeg is installed `sudo apt-get install ffmpeg`
+* Ensure ffmpeg is installed `ffmpeg`
 * Edit [config.json](config.json) with your SoundCloud API key
 * Run the app `node app.js`
 
